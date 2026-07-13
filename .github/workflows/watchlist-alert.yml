@@ -11,18 +11,12 @@ jobs:
   watchlist-alert:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Install dependencies
-        run: pip install -r requirements.txt
-      - name: Run watchlist alert
-        run: python src/watchlist_alert.py
+      - run: pip install -r requirements.txt
+      - run: python src/watchlist_alert.py
         env:
           WECOM_WEBHOOK: ${{ secrets.WECOM_WEBHOOK }}
-          GEMINI_API_KEY: *** secrets.GEMINI_API_KEY }}
-          TELEGRAM_BOT_TOKEN: *** secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
