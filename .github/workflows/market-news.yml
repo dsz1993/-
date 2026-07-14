@@ -1,4 +1,4 @@
-name: Market News Push
+﻿name: Market News Push
 
 on:
   schedule:
@@ -16,7 +16,6 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install aiohttp
-      - run: ls -R
       - run: python financial-push/src/main.py
         env:
           WECOM_WEBHOOK: ${{ secrets.WECOM_WEBHOOK }}
