@@ -1,4 +1,4 @@
-name: Watchlist Alert
+﻿name: Watchlist Alert
 
 on:
   schedule:
