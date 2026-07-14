@@ -15,8 +15,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: pip install -r requirements.txt
-      - run: python src/watchlist_alert.py
+      - run: cd financial-push && pip install -r requirements.txt
+      - run: cd financial-push && python src/watchlist_alert.py
         env:
           WECOM_WEBHOOK: ${{ secrets.WECOM_WEBHOOK }}
           GEMINI_API_KEY: ${{secrets.GEMINI_API_KEY }}
