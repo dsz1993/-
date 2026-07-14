@@ -1,0 +1,32 @@
+[
+  {
+    "code": "sh600519",
+    "name": "贵州茅台",
+    "market": "sh",
+    "alerts": {
+      "price_change_pct": 3,
+      "volume_surge": 2,
+      "monitor_announcements": true
+    }
+  },
+  {
+    "code": "sz000858",
+    "name": "五粮液",
+    "market": "sz",
+    "alerts": {
+      "price_change_pct": 3,
+      "volume_surge": 2,
+      "monitor_announcements": true
+    }
+  },
+  {
+    "code": "sz300750",
+    "name": "宁德时代",
+    "market": "sz",
+    "alerts": {
+      "price_change_pct": 5,
+      "volume_surge": 2,
+      "monitor_announcements": true
+    }
+  }
+]
