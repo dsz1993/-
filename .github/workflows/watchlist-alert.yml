@@ -19,4 +19,4 @@ jobs:
       - run: cd financial-push && python src/watchlist_alert.py
         env:
           WECOM_WEBHOOK: ${{ secrets.WECOM_WEBHOOK }}
-          GEMINI_API_KEY: ${{secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
